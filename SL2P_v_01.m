@@ -2,7 +2,6 @@ function SL2P_DASF(varargin)
 
 %% 1. Initialization
 if ~ismember(nargin,[2,3]), disp({'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';'--usage : Matlab SL2P [input_path\] [S2 tiff data folder] [output_path\ (optional)]'});return; end;
-varargin={'G:\Najib\4_2_SL2P_v2\SL2P_v1\Samples_S2L2A_data\','S2B_MSIL2A_20180806T181019_N0206_R084_T13UCT_20180806T214545'}
 
 addpath(genpath('.\tools'));
 bio_vars={'LAI','FCOVER','FAPAR','LAI_Cab','LAI_Cw'};
