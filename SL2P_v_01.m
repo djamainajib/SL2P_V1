@@ -1,9 +1,11 @@
-function SL2P_DASF(varargin)
+function SL2P(varargin)
 
 %% 1. Initialization
 if ~ismember(nargin,[2,3]), disp({'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';'--usage : Matlab SL2P [input_path\] [S2 tiff data folder] [output_path\ (optional)]'});return; end;
 
 addpath(genpath('.\tools'));
+
+
 bio_vars={'LAI','FCOVER','FAPAR','LAI_Cab','LAI_Cw'};
 BIO_VAR_bounding_box=importdata('aux_data\BIO_VAR_bounding_box.mat');
 
